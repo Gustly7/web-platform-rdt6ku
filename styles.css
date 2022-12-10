@@ -1,4 +1,23 @@
 .smile {
   white-space: pre-line;
-  font-size: 70vh;
+  font-size: 40vh;
+}
+
+.shake {
+  display: inline-table;
+  font-size: 40vh;
+  animation: color-me-in 0.2s infinite;
+  transform-origin: right bottom;
+}
+
+@keyframes color-me-in {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
